@@ -1,0 +1,54 @@
+
+main {
+    padding:40px 5%;
+    grid-area: content;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-areas: 
+    "sidebar posts"
+    ;
+}
+
+
+main .sidebar {
+    grid-area: sidebar;
+    background: rgb(255, 255, 195);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+.sidebar section {
+    margin: 20px 0px;
+}
+
+
+
+
+
+main .posts {
+    grid-area: posts;
+    background: rgb(255, 255, 246);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.post {
+    position: relative;
+    background: cornflowerblue;
+    width: 95%;
+    border-radius: 1em;
+    padding: 5px;
+    height: 200px;
+}
+
+.post img {
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}

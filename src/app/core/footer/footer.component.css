@@ -1,0 +1,15 @@
+footer {
+    color: rgb(199, 199, 199);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding:0px 5%;
+    height: 70px;
+    background: rgb(31, 31, 31);
+    grid-area: footer;
+}
+
+footer .copyright {
+    text-align: center;
+}
